@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+        p{
+            border:1px solid black;
+            padding:20px;
+        }
+        p.html::before{
+            content: "(webcoban.vn)";
+            border:1px solid green;
+            background-color:yellow;
+            color:red;
+        }
+    </style>
+    <!-- <style type="text/css">
+        p{
+            border:1px solid black;
+            padding:20px;
+        }
+        p::before{
+            content: "(webcoban.vn)";
+            border:1px solid green;
+            background-color:yellow;
+            color:red;
+        }
+    </style> -->
+    <style>
+        .pagination > li > a
+        {
+            background-color: white;
+            color: green
+        }
+         
+        .page-item.active .page-link
+        {
+            background-color:green;
+            border-color:green
+        }
+         
+        .pagination > li > a:focus,
+        .pagination > li > a:hover,
+        .pagination > li > span:focus,
+        .pagination > li > span:hover
+        {
+            color: green;
+            background-color: #eee;
+            border-color: #ddd;
+        }
+         
+        .pagination > .active > a
+        {
+            color: white;
+            background-color: green;
+            border: solid 1px green;
+        }
+     
+        .pagination > .active > a:hover
+        {
+            background-color: green;
+            border: solid 1px green;
+        }
+        </style>
+</head>
+<body>
+    <!--
+        li:first-child là pseudo class, vì nó ko thêm vào phần tử nào cả mà chỉ bổ nghĩa cho li
+        div::after là pseudo element vì nó thêm 1 phần tử ảo vào đằng sau div, IE8 chưa hỗ trợ ::
+    -->
+    <p class="html">Tài liệu học HTML</p>
+
+    <p class="css">Tài liệu học CSS</p>
+
+    <p class="js">Tài liệu học JavaScript</p>
+    <!-- https://viblo.asia/p/9-thu-vien-animation-cho-designer-6J3ZgDORlmB -->
+    <div class="container">
+        <!-- Thêm lớp .active để kích hoạt trang bất kỳ -->
+        <!-- Thêm lớp .disabled để hủy kích hoạt trang bất kỳ -->
+        <!-- Thêm 2 lớp: .pagination-lg và .pagination-sm để tăng giảm kích thước: -->
+        <!-- Sử dụng lớp justify-content-center (canh giữa) và .justify-content-end (canh phải ) cho vùng phân trang: -->
+        <h2>Phân trang trong Bootstrap 4 ---- dammio.com</h2>
+        <p>Thêm lớp .pagination vào phần tử ul, sau đó thêm lớp .page-item vào mỗi phần tử và với 1 liên kết trong li thì thêm lớp .page-link:</p>                  
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item active"><a class="page-link" href="#">3</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+        </ul>
+        <ul class="pagination pagination-lg justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+          </ul> <ul class="pagination pagination-sm justify-content-end">
+            <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+          </ul>
+      </div>
+      <div class="container">
+        <h2>Breadcrumb trong Bootstrap 4 --- dammio.com</h2>
+        <p>Sử dụng lớp .breadcrumb để thể hiện breadcum và lớp .breadcrumb-item chỗ mỗi phần tử con:</p>                  
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+          <li class="breadcrumb-item"><a href="#">Giới thiệu</a></li>
+          <li class="breadcrumb-item"><a href="#">Lịch sử hình thành</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <h2>Phân trang trong Bootstrap 4 ---- dammio.com</h2>
+        <p>Giao diện chứa trong một bảng đáp ứng (.table-responsive) để tránh bể giao diện với lượng lớn trang được hiển thị:</p>                  
+         
+        <nav aria-label="Ví dụ điều hướng trang" class="table-responsive mb-2">
+        <ul class="pagination mb-0">
+          <li class="page-item"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          <li class="page-item"><a class="page-link" href="#">7</a></li>
+          <li class="page-item"><a class="page-link" href="#">8</a></li>
+          <li class="page-item"><a class="page-link" href="#">9</a></li>
+          <li class="page-item"><a class="page-link" href="#">10</a></li>
+          <li class="page-item"><a class="page-link" href="#">11</a></li>
+          <li class="page-item"><a class="page-link" href="#">12</a></li>
+          <li class="page-item"><a class="page-link" href="#">13</a></li>
+          <li class="page-item"><a class="page-link" href="#">14</a></li>
+          <li class="page-item"><a class="page-link" href="#">15</a></li>
+          <li class="page-item"><a class="page-link" href="#">16</a></li>
+          <li class="page-item"><a class="page-link" href="#">17</a></li>
+          <li class="page-item"><a class="page-link" href="#">18</a></li>
+          <li class="page-item"><a class="page-link" href="#">19</a></li>
+          <li class="page-item"><a class="page-link" href="#">20</a></li>
+          <li class="page-item"><a class="page-link" href="#">21</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+       
+      </div>
+</body>
+</html>
