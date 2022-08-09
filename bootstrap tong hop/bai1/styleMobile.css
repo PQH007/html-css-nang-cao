@@ -1,0 +1,19 @@
+.main{margin: auto;}
+.khoiA{
+        width: 50%;
+        height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color:red;
+    
+}
+.khoiB{
+        width: 50%;
+        height: 400px;
+        background-color: black;
+}
+.khoiC{
+        width: 50%;
+        height: 200px;
+        background-color: blue;
+}

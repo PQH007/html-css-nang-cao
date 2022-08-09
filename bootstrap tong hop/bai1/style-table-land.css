@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+.main{
+    width: 800px;
+    margin: auto;
+}
+@media screen {
+    .khoiA{
+        width: 100%;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: black;
+    
+    }
+    .khoiB{
+        width: calc(20% - 10px);
+        height: 200px;
+        background-color: blueviolet;
+        float: left;
+        margin-right: 10px;
+    
+    }
+    .khoiC{
+        width: 80%;
+        height: 200px;
+        float: left;
+        background-color: orange;
+    }    
+}
+    
+

@@ -1,0 +1,41 @@
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    order: 1;
+}
+.content{
+    order: 2;
+}
+.freature{
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.freature1{
+    display: flex;
+    width: 50%;
+    height: 50px;
+    order: 2;
+    
+}
+.freature2{
+    display: flex;
+    width: 50%;
+    height: 50px;
+    order: 3;
+}
+.freature3{
+    display: flex;
+    width: 50%;
+    height: 50px;
+    order: 4;
+}
+.signup{
+    display: flex;
+    width: 50%;
+    height: 50px;
+    order: 1;
+}
