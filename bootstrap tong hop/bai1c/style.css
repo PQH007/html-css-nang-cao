@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header{
+    width: 20%;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.menu{
+    width: 80%;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(18, 113, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.main_body{
+    width: 50%;
+    height: 75%;
+    background-color: rgb(7, 7, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.khoi{
+    width: 25%;
+    height: 75%;
+    float: right;
+    
+}
+.image{
+    width: 100%;
+    height: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.extra{
+    width: 100%;
+    height: 50%;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+    width: 100%;
+    height: 25%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:480px) {
+    .header{
+        width: 100%;
+        order: 1;
+    }
+    .hero{
+        order: 2;
+    }
+    .menu{
+        width: 25%;
+        height: 200px;
+        order: 3;
+    }
+    .footer{
+        order: 4;
+        width: 75%;
+        height: 200px;
+    }
+    .main_body{
+        width: 100%;
+        height: 50%;
+        order: 1;
+    }
+    .banner{
+        order: 2;
+        width: 100%;
+        height: 25%;
+    }
+    .khoi{
+        order: 3;
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+    .extra{
+        order: 1;
+        width: 75%;
+    }
+    .image{
+        order: 2;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .main{
+        flex-direction: column;
+    }
+    .header{
+        width: 100%;
+        height: 20px;
+        order: 1;
+    }
+    .menu{
+        width: 100%;
+        height: 20px;
+        order: 2;
+    }
+    .hero{
+        width: 100%;
+        height: 60px;
+        order: 3;
+    }
+    .footer{
+        width: 100%;
+        height: 180px;
+        order: 4;
+    }
+    .khoi{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .extra{width: 100%;}
+    .image{width: 100%;}
+}
