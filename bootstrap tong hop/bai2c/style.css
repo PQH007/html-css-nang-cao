@@ -1,0 +1,18 @@
+.khoi{
+    width: 900px;
+    height: 400px;
+}
+.card_box{
+    height: 100px;
+}
+.box{
+    width: 400px;
+}
+.line:after{
+    content: '';
+    display: flex;
+    border-bottom: 5px solid green;
+    width: 50px;
+    margin-left: 650px;
+    margin-top: 20px;
+}
