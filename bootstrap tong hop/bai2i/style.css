@@ -1,0 +1,16 @@
+.box1_{
+    background-image: url(./img/—Pngtree—abstract\ trendy\ neon\ colorful\ frame_1177389.png);
+}
+.user-name{
+    position: relative;
+}
+.user-i{
+    position: absolute;
+    top: 42%;
+    z-index: 1;
+}
+.user-i2{
+    position: absolute;
+    top: 54%;
+    z-index: 1;
+}
