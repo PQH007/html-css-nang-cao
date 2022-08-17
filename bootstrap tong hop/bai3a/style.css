@@ -1,5 +1,6 @@
 .card{
     border: none !important;
+    overflow: hidden;
 }
 .img-center{
     position: relative;
@@ -9,9 +10,16 @@
     color: white;
     position: absolute;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-left: 50px;
     display: none;
+}
+.content-img i{
+    top: 0;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 20px;
 }
 .img-center:hover .content-img{
     display: block;
@@ -35,4 +43,13 @@
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     opacity: 0.5;
+}
+@keyframes exmaple{
+    0% {right: 25%; bottom: 0px;}
+    70%{right: 0px; bottom:25%;}
+}
+.test{
+    position: relative;
+    animation-name: exmaple;
+    animation-duration: 4s;
 }
