@@ -1,0 +1,25 @@
+.navbar-brand img{
+    width: 50px !important;
+    height: 50px !important;
+}
+.box-mess{
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 30px;
+    color:skyblue ;
+    width: 100% !important;
+}
+.div-mess{
+    width: 100px;
+    height: 100px;
+}
+.div-mess::after{
+    content: 'Mess with my friend';
+    background-color: skyblue;
+    color: white;
+    border-radius: 20px;
+}
+.div-1{
+    width: 100%;
+    height: 100px;
+}
