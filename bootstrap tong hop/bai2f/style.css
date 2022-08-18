@@ -1,0 +1,13 @@
+.carousel-caption{
+margin-left: 40%;
+background-color: greenyellow;
+width: 500px !important;
+}
+.carousel-control-prev{
+    margin-left: 90%;
+    font-size: 40px;
+}
+.carousel-control-next{
+    margin-top: 10%;
+    width: 30% !important;
+}

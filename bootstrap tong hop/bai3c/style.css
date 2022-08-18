@@ -1,0 +1,27 @@
+.box-1 i{
+    font-size: 50px;
+    color: orange;
+}
+.box-1 a{
+    text-decoration: none;
+    color: white;
+}
+.card-1{
+    border: none !important;
+}
+.card-1 img{
+    height: 200px;
+}
+.card button {
+    width: 75%;
+    border-radius:20px 80px 0px 20px; 
+}
+@keyframes iconanm{
+    0%{top:100%}
+    100%{top: 0px;}
+}
+.icon-anm{
+    position: relative;
+    animation-name: iconanm;
+    animation-duration: 4s;
+}
